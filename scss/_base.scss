@@ -1,0 +1,110 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.9;
+  color: $grey;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+b {
+  font-weight: 500;
+  color: $dark;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $dark;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 1.4;
+
+  @include mobile {
+    font-size: 26px;
+  }
+}
+
+.title {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto 20px;
+}
+
+.subtitle {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 60px;
+}
+
+.btn-red {
+  @include btn-red;
+}
+
+.btn-outline {
+  @include btn-outline;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  color: $dark;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.check-list {
+  li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 8px;
+
+    &::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: $green;
+      font-weight: 700;
+    }
+  }
+}

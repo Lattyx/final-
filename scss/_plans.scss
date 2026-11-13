@@ -1,0 +1,76 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+.plans {
+  padding: 80px 0;
+  background: $light;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+}
+
+.plan {
+  flex: 1;
+  max-width: 330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px 40px;
+  background: #fff;
+  border: 2px solid $border;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  h3 {
+    font-size: 18px;
+    margin: 25px 0 20px;
+  }
+
+  .check-list {
+    align-self: flex-start;
+    font-size: 14px;
+    margin-bottom: 40px;
+    flex-grow: 1;
+  }
+
+  &__price {
+    font-size: 25px;
+    font-weight: 500;
+    color: $dark;
+    margin-bottom: 15px;
+
+    span {
+      color: $grey;
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    @include btn-outline;
+    font-weight: 700;
+  }
+
+  &:hover {
+    box-shadow: 0 15px 40px rgba(13, 16, 37, 0.1);
+  }
+
+  &.active {
+    border-color: $red;
+
+    .plan__btn {
+      background: $red;
+      color: #fff;
+      box-shadow: 0 20px 40px rgba($red, 0.35);
+    }
+  }
+}

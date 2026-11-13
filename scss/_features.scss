@@ -1,0 +1,41 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+.features {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  &__img {
+    width: 48%;
+  }
+
+  &__text {
+    max-width: 400px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include tablet {
+    padding: 70px 0;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <circle cx="75" cy="75" r="70" fill="#FFECEC"/>
+  <path d="M75 40l32 16v38L75 110 43 94V56z" fill="#F53838"/>
+  <path d="M75 40l32 16-32 16-32-16z" fill="#FF7A7A"/>
+  <path d="M75 72v38L43 94V56z" fill="#D92B2B"/>
+  <path d="M59 48l32 16v12l-8 4V68L51 52z" fill="#fff" opacity=".85"/>
+</svg>

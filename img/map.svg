@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480">
+  <defs>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="3.200" fill="#C9CDD4"/>
+    </pattern>
+    <clipPath id="land">
+      <ellipse cx="190" cy="130" rx="130" ry="80"/>
+      <ellipse cx="250" cy="215" rx="50" ry="35"/>
+      <ellipse cx="300" cy="340" rx="55" ry="95"/>
+      <ellipse cx="360" cy="60" rx="45" ry="30"/>
+      <ellipse cx="500" cy="120" rx="65" ry="50"/>
+      <ellipse cx="530" cy="280" rx="70" ry="100"/>
+      <ellipse cx="710" cy="130" rx="170" ry="85"/>
+      <ellipse cx="720" cy="235" rx="50" ry="40"/>
+      <ellipse cx="850" cy="370" rx="60" ry="38"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1000" height="480" fill="url(#dots)" clip-path="url(#land)"/>
+
+  <g fill="#F53838">
+    <circle cx="200" cy="150" r="20" opacity=".2"/><circle cx="200" cy="150" r="9"/>
+    <circle cx="300" cy="330" r="20" opacity=".2"/><circle cx="300" cy="330" r="9"/>
+    <circle cx="490" cy="115" r="20" opacity=".2"/><circle cx="490" cy="115" r="9"/>
+    <circle cx="540" cy="290" r="20" opacity=".2"/><circle cx="540" cy="290" r="9"/>
+    <circle cx="720" cy="140" r="20" opacity=".2"/><circle cx="720" cy="140" r="9"/>
+    <circle cx="850" cy="370" r="20" opacity=".2"/><circle cx="850" cy="370" r="9"/>
+  </g>
+</svg>
